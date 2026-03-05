@@ -126,7 +126,7 @@ end
 
 function M.open_commits(rev1, rev2)
   if rev1 then
-    open_codediff_with_revisions(rev1, rev2 or rev1)
+    open_codediff_with_revisions(rev2 and rev1 or (rev1 .. "^"), rev2 or rev1)
     return
   end
   local picker = require("review.picker")
