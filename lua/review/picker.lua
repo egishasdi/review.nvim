@@ -232,7 +232,7 @@ function M.open(callback)
       text = {
         top = " Select commits to review ",
         top_align = "center",
-        bottom = " <Space> select | r reset | <CR> confirm | q quit ",
+        bottom = " <Space> select range | r reset | <CR> confirm | q quit ",
         bottom_align = "center",
       },
     },
