@@ -13,6 +13,7 @@ local M = {}
 ---@field line_hl string
 
 ---@class ReviewKeymaps
+---@field add_comment string|false
 ---@field add_note string|false
 ---@field add_suggestion string|false
 ---@field add_issue string|false
@@ -53,6 +54,7 @@ M.defaults = {
   },
   keymaps = {
     -- Edit mode (leader-based)
+    add_comment = "<localleader>cc",
     add_note = "<localleader>cn",
     add_suggestion = "<localleader>cs",
     add_issue = "<localleader>ci",

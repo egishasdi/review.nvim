@@ -153,6 +153,7 @@ EDIT MODE                                               *review-keymaps-edit*
 These keymaps are active when `codediff.readonly = false`:
 
     Key           Description ~
+    `<localleader>cc`    Add comment (pick type)              |n, x|
     `<localleader>cn`    Add note                            |n, x|
     `<localleader>cs`    Add suggestion                      |n, x|
     `<localleader>ci`    Add issue                           |n, x|

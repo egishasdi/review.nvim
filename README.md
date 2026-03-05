@@ -103,6 +103,7 @@ Lines prefixed with `~` refer to the old (left) side of the diff. Comments persi
 **Edit mode** (when `readonly = false`):
 | Key | Action |
 |-----|--------|
+| `<localleader>cc` | Add comment (pick type from menu) |
 | `<localleader>cn/cs/ci/cp` | Add Note/Suggestion/Issue/Praise |
 | `<localleader>cd` | Delete comment |
 | `<localleader>ce` | Edit comment |
@@ -122,12 +123,13 @@ All keymaps can be set to `false` to disable them.
 **Keymap options**
 | Option | Default | Action |
 |--------|---------|--------|
-| `add_note` | `<leader>cn` | Add note (edit mode) |
-| `add_suggestion` | `<leader>cs` | Add suggestion (edit mode) |
-| `add_issue` | `<leader>ci` | Add issue (edit mode) |
-| `add_praise` | `<leader>cp` | Add praise (edit mode) |
-| `delete_comment` | `<leader>cd` | Delete comment (edit mode) |
-| `edit_comment` | `<leader>ce` | Edit comment (edit mode) |
+| `add_comment` | `<localleader>cc` | Add comment, pick type (edit mode) |
+| `add_note` | `<localleader>cn` | Add note (edit mode) |
+| `add_suggestion` | `<localleader>cs` | Add suggestion (edit mode) |
+| `add_issue` | `<localleader>ci` | Add issue (edit mode) |
+| `add_praise` | `<localleader>cp` | Add praise (edit mode) |
+| `delete_comment` | `<localleader>cd` | Delete comment (edit mode) |
+| `edit_comment` | `<localleader>ce` | Edit comment (edit mode) |
 | `next_comment` | `]n` | Next comment |
 | `prev_comment` | `[n` | Previous comment |
 | `next_file` | `<Tab>` | Next file |

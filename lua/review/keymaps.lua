@@ -98,6 +98,7 @@ local function show_help()
     entry("readonly_delete", "Delete comment", comment_entries)
     entry("readonly_add_file", "File-level comment", comment_entries)
   else
+    entry("add_comment", "Add comment (pick type)", comment_entries)
     entry("add_note", "Add note", comment_entries)
     entry("add_suggestion", "Add suggestion", comment_entries)
     entry("add_issue", "Add issue", comment_entries)
@@ -251,6 +252,8 @@ local function set_buffer_keymaps(bufnr)
     set(km.prev_comment, function() comments.goto_prev() end, "Previous comment")
   else
     -- EDIT MODE: Typed add keymaps with visual mode support
+    set(km.add_comment, function() comments.add_with_menu() end, "Add comment (pick type)")
+    set_visual(km.add_comment, ":<C-u>lua require('review.comments').add_for_range()<CR>", "Add comment for selection")
     set(km.add_note, function() comments.add_at_cursor("note") end, "Add note")
     set_visual(km.add_note, ":<C-u>lua require('review.comments').add_for_range('note')<CR>", "Add note for selection")
     set(km.add_suggestion, function() comments.add_at_cursor("suggestion") end, "Add suggestion")
