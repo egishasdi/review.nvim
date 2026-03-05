@@ -118,11 +118,6 @@ All fields are optional; defaults are shown.
         },
       },
 
-      export = {
-        context_lines = 3,
-        include_file_stats = true,
-      },
-
       codediff = {
         readonly = true,
       },
@@ -130,15 +125,6 @@ All fields are optional; defaults are shown.
       keymaps = { ... },  -- see |review-keymaps|
     })
 <
-
-                                                       *review-config-export*
-export.context_lines ~
-    Number of lines of code context shown around each comment in the
-    exported output. Default: 3
-
-export.include_file_stats ~
-    Include file-level statistics (insertions/deletions) in the export
-    header. Default: true
 
                                                      *review-config-codediff*
 codediff.readonly ~

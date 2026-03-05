@@ -3,7 +3,6 @@ local M = {}
 ---@class ReviewConfig
 ---@field comment_types table<string, CommentType>
 ---@field keymaps ReviewKeymaps
----@field export ReviewExportConfig
 ---@field codediff ReviewCodediffConfig
 
 ---@class CommentType
@@ -40,10 +39,6 @@ local M = {}
 ---@field popup_cancel string|false
 ---@field show_help string|false
 ---@field popup_cycle_type string|false
-
----@class ReviewExportConfig
----@field context_lines number
----@field include_file_stats boolean
 
 ---@class ReviewCodediffConfig
 ---@field readonly boolean
@@ -89,10 +84,6 @@ M.defaults = {
     popup_submit = "<C-s>",
     popup_cancel = "q",
     popup_cycle_type = "<Tab>",
-  },
-  export = {
-    context_lines = 3,
-    include_file_stats = true,
   },
   codediff = {
     readonly = true,

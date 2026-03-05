@@ -165,10 +165,6 @@ require("review").setup({
     prev_comment = "[n",
     toggle_file_panel = "f",
   },
-  export = {
-    context_lines = 3,
-    include_file_stats = true,
-  },
   codediff = {
     readonly = true,
   },
