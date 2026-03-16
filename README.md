@@ -24,11 +24,14 @@ Inspired by [tuicr](https://github.com/agavra/tuicr).
 
 ## Installation
 
+This plugin uses [semantic versioning](https://semver.org/). Pin to a tag to avoid breaking changes.
+
 Using lazy.nvim:
 
 ```lua
 {
   "georgeguimaraes/review.nvim",
+  version = "v*",
   dependencies = {
     "esmuellert/codediff.nvim",
     "MunifTanjim/nui.nvim",
