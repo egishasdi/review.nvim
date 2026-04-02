@@ -98,6 +98,7 @@ Lines prefixed with `~` refer to the old (left) side of the diff. Comments persi
 | `[n` | Jump to previous comment |
 | `C` | Export to clipboard and show preview |
 | `S` | Send comments to sidekick.nvim |
+| `O` | Send comments to OpenCode |
 | `<C-r>` | Clear all comments |
 | `q` | Close and export comments to clipboard |
 | `t` | Toggle side-by-side/inline layout |
@@ -141,6 +142,7 @@ All keymaps can be set to `false` to disable them.
 | `list_comments` | `c` | List all comments |
 | `export_clipboard` | `C` | Export to clipboard |
 | `send_sidekick` | `S` | Send comments to sidekick |
+| `send_opencode` | `O` | Send comments to OpenCode |
 | `clear_comments` | `<C-r>` | Clear all comments |
 | `close` | `q` | Close and export |
 | `toggle_readonly` | `R` | Toggle readonly/edit mode |
